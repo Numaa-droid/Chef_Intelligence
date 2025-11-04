@@ -33,7 +33,6 @@ class EmbeddingManager:
         if not docs:
             return 0
 
-        # infer embedding dimension and ensure collection
         dim = len(self.emb.encode("ping"))
         ensure_collection(self.collection, dim)
 
